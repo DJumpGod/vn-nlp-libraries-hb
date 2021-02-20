@@ -29,6 +29,8 @@ import org.apache.commons.io.IOUtils;
 public final class StringNormalizer {
 	
 	private static Map<String, String> map;
+
+	private volatile static StringNormalizer normalRules;
 	
 	private StringNormalizer(String mapFile) {
 		map = new HashMap<String, String>();
@@ -77,7 +79,15 @@ public final class StringNormalizer {
 	 * @return an instance of the class.
 	 */
 	public static StringNormalizer getInstance(Properties properties) {
-		return new StringNormalizer(properties.getProperty("normalizationRules"));
+		if (normalRules == null) {
+			synchronized (StringNormalizer.class) {
+				if (normalRules == null) {
+					normalRules = new StringNormalizer(properties.getProperty("normalizationRules"));
+				}
+			}
+		}
+		return normalRules;
+		//return new StringNormalizer(properties.getProperty("normalizationRules"));
 	}
 	
 	/**

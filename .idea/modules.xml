@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nlp-parent/nlp-fsm/nlp-fsm.iml" filepath="$PROJECT_DIR$/nlp-parent/nlp-fsm/nlp-fsm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlp-parent/nlp-parent.iml" filepath="$PROJECT_DIR$/nlp-parent/nlp-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlp-parent/nlp-sd/nlp-sd.iml" filepath="$PROJECT_DIR$/nlp-parent/nlp-sd/nlp-sd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlp-parent/nlp-tokenizer/nlp-tokenizer.iml" filepath="$PROJECT_DIR$/nlp-parent/nlp-tokenizer/nlp-tokenizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlp-parent/nlp-utils/nlp-utils.iml" filepath="$PROJECT_DIR$/nlp-parent/nlp-utils/nlp-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vn-nlp-libraries.iml" filepath="$PROJECT_DIR$/.idea/vn-nlp-libraries.iml" />
+    </modules>
+  </component>
+</project>
